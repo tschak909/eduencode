@@ -1,0 +1,10 @@
+toolsets = gnu;
+library eduencode {
+	sources { eduencode.c }
+        headers { eduencode.h }
+}
+
+program test_eduencode {
+	deps = eduencode;
+	sources { test_eduencode.c }
+}
