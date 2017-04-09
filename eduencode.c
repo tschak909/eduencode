@@ -34,7 +34,6 @@ int edu_write_leader(FILE* fp)
   int i;
   float amplitude = AMPLITUDE;
   float freq_hz = HZ_MARK;
-  float phase=0;
   int buffer_size = SAMPLE_RATE * NUM_CHANNELS * SECS_LEADER;
   float freq_radians_per_sample = freq_hz*2*M_PI/SAMPLE_RATE;
   int32_t buffer[buffer_size];
